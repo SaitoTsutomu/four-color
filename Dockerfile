@@ -7,5 +7,5 @@ RUN conda install -y pillow flask networkx && \
     sudo rm -rf $HOME/.c* /opt/conda/pkgs/* \
         /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]* \
         /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32
-COPY sample.png $HOME
+COPY sample.py sample.png $HOME
 CMD ["sh", "-c", "python -m four_color"]
